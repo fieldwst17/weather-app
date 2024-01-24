@@ -1,0 +1,65 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+  color: #515151;
+  background: linear-gradient(45deg, #185aad, #43c2a2);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  & section {
+    margin-top: 7%;
+
+    & .location {
+      color: #fff;
+
+      & .city {
+        margin: 0;
+        font-size: 2em;
+      }
+      & .state {
+        margin-top: 1.5px;
+      }
+    }
+
+    & .card {
+      width: 500px;
+      box-shadow: 0 10px 0 #515154;
+
+      & .weather {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        color: #fff;
+        background: orange;
+        height: 15vh;
+        padding: 20px 0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        
+        & h1 {
+          margin: 0;
+          font-size: 3em;
+        }
+      }
+    }
+
+    & .info {
+      display: flex;
+      background: #fff;
+
+      * {
+        padding: 20px;
+        flex: 1;
+        border-right: 1px solid #e6e6e6;
+      }
+    }
+  }
+}
